@@ -1,1 +1,54 @@
+.converter-grid {
+  display: grid;
+  height: 100%;
+  background-image: url(../../assets/1558247.jpg);
+  grid-template-rows: 15% 70% 15%;
+  grid-template-columns: 30% max(40%, 275px) 30%;
+}
 
+.converter-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 75%);
+  grid-row: 2/3;
+  grid-column: 2/3;
+  border-radius: 30px;
+  box-shadow: 0px 0px 10px 10px gray;
+}
+
+.converter {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 100%;
+  align-items: center;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0px;
+}
+
+.switch-btn {
+  margin: 20px;
+  font-size: 20px;
+}
+
+.convert-btn {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+@media all and (max-width: 675px) {
+  .converter-grid {
+    grid-template-columns: 100%;
+  }
+  .converter-body {
+    grid-column: 1/2;
+    border-radius: 0px;
+  }
+}
