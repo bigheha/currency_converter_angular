@@ -1,0 +1,42 @@
+<div class="converter-grid">
+  <div class="converter-body">
+    <div class="converter">
+      <div class="inputs">
+        <div>
+          <input
+            type="number"
+            value="{{ currency1amount }}"
+            (input)="convert1($event.target)"
+          />
+          <select
+            name="cur1Code"
+            id="cur1Id"
+            required
+            (change)="setCode1($event.target)"
+          >
+            <option value="UAH">UAH</option>
+            <option value="EUR">EUR</option>
+            <option value="USD" selected>USD</option>
+          </select>
+        </div>
+        <div>
+          <input
+            type="number"
+            value="{{ currency2amount }}"
+            (input)="convert2($event.target)"
+          />
+          <select
+            name="cur2code"
+            id="cur2id"
+            required
+            (change)="setCode2($event.target)"
+          >
+            <option value="UAH" selected>UAH</option>
+            <option value="EUR">EUR</option>
+            <option value="USD">USD</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
