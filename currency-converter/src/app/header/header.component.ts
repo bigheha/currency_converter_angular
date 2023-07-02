@@ -7,13 +7,11 @@ import { GetQuotesService } from '../get-quotes.service';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent implements OnInit {
-  currenciesData: any;
-
+  currenciesData: any = 'XX.XX';
   constructor(private GetQuotesService: GetQuotesService) {}
 
   ngOnInit(): void {
     this.GetQuotesService.getData().subscribe((data) => {
-      console.log(data);
       this.currenciesData = data;
     });
   }
