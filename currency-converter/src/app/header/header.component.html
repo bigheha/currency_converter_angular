@@ -1,7 +1,11 @@
 <div class="base">
   <span class="logo">PAPER EXCHANGE</span>
   <div class="values">
-    <span class="current-value">USD = XX.XX UAH</span>
-    <span class="current-value">EUR = XX.XX UAH</span>
+    <span class="current-value"
+      >USD = {{ (1 / currenciesData.data["USD"].value).toFixed(2) }}</span
+    >
+    <span class="current-value"
+      >EUR = {{ (1 / currenciesData.data["EUR"].value).toFixed(2) }} UAH</span
+    >
   </div>
 </div>

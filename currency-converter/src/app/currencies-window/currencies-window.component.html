@@ -4,12 +4,20 @@
       <div class="inputs">
         <div>
           <input type="number" />
-          <select></select>
+          <select name="cur1Code" id="cur1Id" required>
+            <option value="UAH">UAH</option>
+            <option value="EUR">EUR</option>
+            <option value="USD" selected>USD</option>
+          </select>
         </div>
         <button class="switch-btn">switch</button>
         <div>
           <input type="number" />
-          <select></select>
+          <select name="cur2code" id="cur2id" required>
+            <option value="UAH" selected>UAH</option>
+            <option value="EUR">EUR</option>
+            <option value="USD">USD</option>
+          </select>
         </div>
       </div>
       <button class="convert-btn">convert</button>
